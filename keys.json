@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "compounding-funda-417317",
+  "private_key_id": "99a222076e4c3dfe82a1ade3bd57aeb3e0df4fd1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDDhuph75hbz9KF\njxcIAqa9q9bT0VlsLemYPlzRbnaNz7GOVjc+BdBydaMJlIoLzn4OmfMau/ZDYfen\nz4CyfzujW5ePsi7KtHI1FhW4PIpH9pVXQepP2PYoTFp0aiBocdhuMzLVmHFziA9X\nmRnaXOWGmj0QN1PyxUyEMhHVxMzS8kuHLIV1MW5DHKA9ryFWozgtN5meDXPrfpMc\ndmKyTf2g4YinMGaC+O0Qfb1BEv6/5uXwR5WuIi7zZhaoQU7HvYnUupf3qCzSJvWn\ngzf3s9qa+2Kl9WBY9dk0dFrUYzg5uExd0wtFE/Lwdp/fzpZPI+l+3FuszhFFvImP\nEx7AX1R3AgMBAAECggEAOuV/4oJGdZlzQ5HnkR0jVszVSDauZfyqeZaHZPqOMYdX\nZ5WmzEL6GBBBTRh2QLoxlHphFTN7Ka7v55eEn7/dmgZz7+/vUlXqdP0zC60IxkaL\nk54iU2z6MQdW0+xH2M46MG+xp09lFTTt0igm9nS3GsWJEUJpQh6WPtfKMYc3X27f\nzguX453xxjM0//RVNSS89yBWnLmHsvlHj0/4ottv3lXSXp+abrZ47X+upOKXUAKS\n9LUjPSlzZS2LDATDVqdmXuEfAES7TQlT6JgjYk4yDvY3vaPADdul+Kg8AjLiORtK\nYRRyLKOlHz53S9f/syPKLL2ZWBYxhYlGgcG5RSaNUQKBgQDqOSDNSKtFl4meXwLR\nFb1l55kCKb1jtNXer/OPbuWOJ0kNGWBS+By9y8wc3QSIaWKnI6Slf8VT6EI6bqXn\nYknyUBDG9V5R81mBtBHsDcPG7jFahSGarM00Mkzw5PD18TO+mv8bVseSBoemrAUZ\nE8XcoIymLZUEMF1cqlJINDltbwKBgQDVtMJ24/8eYoALq+Y551DiG4jcWieSawLF\n7EOlaTIQgDNI4ekDUMCEBvITR4YkCSAbe+jtRbwmVxTDPdL3hDpTPQj6CNCY7m8I\nu6q4BZCgzY46PPlouTIFyL4DyAMhl1suA5Q8RaBz6cvSxjeXxoUbCRUht+y2xb0C\nwqUFgYeVeQKBgQDiuaAd9v0LpW+qpQ/l8yReU3ySUnMo4/Cu2iVrL474NuEI1Aqg\n5dl0g6U2P1/W6CR95AvJxE/wNAB/7YGc5FDuRUCoRvYhX+3BltxOYtijZQjTNdHc\nlu8gWpyOBx+VAwHyvLi67xrKKJYA6b0ZlEFQmvzrE26PGn4VaC20BRGd8wKBgFld\nDhiDPLJrBBpdVpeOB/+U/gUO2g9bGjzDkIIB3EKUKV3nwfV19hr/gIjZVtmIy1lS\n1lMp3wS1U2RVXPvN2knmcvODbh8VTW78cuYixZjIfBoUV0MYdjd++x4/rDeGwEUc\nkAcoInF2KZpI8wRPqmdkw+Zmr+C6DVCzLiiAQr8ZAoGAD0w8dWEEkohv2UWPwmUK\njEQ3EmQ9rPhLlhJ4KeuNOqjGtlUpQ5cbyoCvvqpC3WhJja7cCR91kw5NdyhSaZkD\n8b6kHHdplZ11dMr7twn54wvjGUYIFRLuPlkrpCjlPHjnmxVQvuwuZ9J+C3lSA6gr\n2CkMWJnJNmgv61JvKAoKeco=\n-----END PRIVATE KEY-----\n",
+  "client_email": "compounding-funda@compounding-funda-417317.iam.gserviceaccount.com",
+  "client_id": "108085696584414656910",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/compounding-funda%40compounding-funda-417317.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
