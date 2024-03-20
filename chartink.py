@@ -24,10 +24,10 @@ def trasferDataToGoogleSheet():
         marketAdvacneDecline()
  
         try:
-            title = "https://www.compoundingfunda.com/"
-            sub_title = "Developed by J P Sharma - 9927067443"
+            title = "Compounding Funda"
+            sub_title = "powered by SnT Solution - 8080105062"
             update_cell(cell='A3',data=title,sheetname='DashBoard')
-            update_cell(cell='F3',data=sub_title,sheetname='DashBoard')
+            update_cell(cell='A200',data=sub_title,sheetname='DashBoard')
             # Condtion 1
             conditionName = "SUPER HERO" # change name Here
             conditionNameLocation = "A4"
@@ -84,30 +84,29 @@ def trasferDataToGoogleSheet():
             chartinkLogicBankend(condition=CONDITION5,row_to_start=row_to_start,row_to_clean= row_to_clean,sheetname='Hello World',conditionName=conditionName,conditionNameLocation=conditionNameLocation)
         except Exception as e:
             print(e)
-        # # Condtion 6    - Stopped by User
-        # try:
-        #     # condition 6
-        #     # conditionName = "MOMENTUM BUY"
-        #     conditionName = "ONE WAY BEARISH(INTRADAY)"
-        #     # CONDITION6 = {"scan_clause": "( {cash} ( ( {57960} ( ( {cash} ( latest avg true range( 14 ) > 1 day ago avg true range( 14 ) and 1 day ago avg true range( 14 ) <= 2 days ago avg true range( 14 ) and 2 days ago avg true range( 14 ) <= 3 days ago avg true range( 14 ) and 3 days ago avg true range( 14 ) <= 4 days ago avg true range( 14 ) and 4 days ago avg true range( 14 ) <= 5 days ago avg true range( 14 ) and 5 days ago avg true range( 14 ) <= 6 days ago avg true range( 14 ) and 6 days ago avg true range( 14 ) <= 7 weeks ago avg true range( 14 ) and latest volume >= 1 day ago volume and latest volume >= latest sma( latest volume , 20 ) and latest volume >= 25000 and latest close > latest open and market cap > 500 ) ) ) ) ) )"}
-        #     CONDITION6 = {'scan_clause': '( {46553} ( latest open = latest high and latest open <= 1 day ago close and latest "close - 1 candle ago close / 1 candle ago close * 100" <= 0 and latest "close - 1 candle ago close / 1 candle ago close * 100" >= -1.5 ) )' }
-        #     row_to_start ='Z3'
-        #     row_to_clean = "Z3:AC"
-        #     conditionNameLocation = "F16"
-        #     chartinkLogicBankend(condition=CONDITION6,row_to_start=row_to_start,row_to_clean= row_to_clean,sheetname='Hello World',conditionName=conditionName,conditionNameLocation=conditionNameLocation)
-        # except Exception as e:
-        #     print(e)
-        # # Condtion 7    - Stopped by User
-        # try:
-        #     # condition 
-        #     conditionName = "FUTURE WINNER"
-        #     CONDITION7 = {"scan_clause": "( {cash} ( ( {cash} ( latest close >= latest ema( latest close , 20 ) and latest ema( latest close , 20 ) < latest ema( latest close , 50 ) and latest ema( latest close , 20 ) > 1 day ago ema( latest close , 20 ) and market cap >= 20 and latest volume > 1 day ago volume and latest volume > 2 days ago volume and latest close >= 20 and latest close >= 1 day ago close and latest volume >= 50000 and latest close / weekly max( 52 , weekly high ) * 100 > 75 ) ) ) ) "}
-        #     row_to_start ='AE3'
-        #     row_to_clean = "AE3:AH"
-        #     conditionNameLocation = "J16"
-        #     chartinkLogicBankend(condition=CONDITION7,row_to_start=row_to_start,row_to_clean= row_to_clean,sheetname='Hello World',conditionName=conditionName,conditionNameLocation=conditionNameLocation)
-        # except Exception as e:
-        #     print(e)
+        # Condtion 6    - Stopped by User
+        try:
+            # condition 6
+            # conditionName = "MOMENTUM BUY"  - to be change on 20.3.2024
+            conditionName = "200 MA SUPPORT DAILY"
+            CONDITION6 = {"scan_clause": "( {cash} ( ( {57960} ( ( {57960} ( latest close > latest sma( latest close , 200 ) and latest close >= latest sma( latest vwap , 200 ) and 1 day ago close < latest sma( latest close , 200 ) and 2 days ago close < latest sma( latest close , 200 ) and 3 days ago close < latest sma( latest close , 200 ) and 4 days ago close < latest sma( latest close , 200 ) and latest volume >= 200000 and latest close >= 20 and latest obv >= latest sma( latest obv , 21 ) ) ) or( {57960} ( latest close < latest sma( latest close , 200 ) and 1 day ago close > latest sma( latest close , 200 ) and 2 days ago close > latest sma( latest close , 200 ) and 3 days ago close > latest sma( latest close , 200 ) and 4 days ago close > latest sma( latest close , 200 ) and latest volume >= 200000 and latest close >= 20 and latest obv <= latest sma( latest obv , 21 ) ) ) ) ) ) )"}
+            row_to_start ='Z3'
+            row_to_clean = "Z3:AC"
+            conditionNameLocation = "U4"
+            chartinkLogicBankend(condition=CONDITION6,row_to_start=row_to_start,row_to_clean= row_to_clean,sheetname='Hello World',conditionName=conditionName,conditionNameLocation=conditionNameLocation)
+        except Exception as e:
+            print(e)
+        # Condtion 7    - Stopped by User - to be change on 20.3.2024
+        try:
+            # condition 
+            conditionName = "COMPOUNDING FUNDA D>40 W>60 M>60"
+            CONDITION7 = {"scan_clause": "( {cash} ( ( {33489} ( monthly rsi( 14 ) > 60 and weekly rsi( 14 ) > 60 and 1 day ago rsi( 14 ) > 37 and 1 day ago rsi( 14 ) < 60 and latest rsi( 14 ) > 1 day ago rsi( 14 ) ) ) ) ) "}
+            row_to_start ='AE3'
+            row_to_clean = "AE3:AH"
+            conditionNameLocation = "Y4"
+            chartinkLogicBankend(condition=CONDITION7,row_to_start=row_to_start,row_to_clean= row_to_clean,sheetname='Hello World',conditionName=conditionName,conditionNameLocation=conditionNameLocation)
+        except Exception as e:
+            print(e)
         # # Condtion 8    - Stopped by User
         # try:
         #     # condition 8
