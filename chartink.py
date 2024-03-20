@@ -124,4 +124,4 @@ def trasferDataToGoogleSheet():
             return {"Market Status" : "hello"}
     # Sleep for 5 minutes``
         
-    time.sleep(100) # 300 seconds = 5 minutes
+    time.sleep(120) # 300 seconds = 5 minutes
