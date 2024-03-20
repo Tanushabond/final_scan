@@ -24,10 +24,10 @@ def trasferDataToGoogleSheet():
         marketAdvacneDecline()
  
         try:
-            title = "Compounding Funda"
-            sub_title = "powered by SnT Solution - 8080105062"
+            title = "https://www.compoundingfunda.com/"
+            sub_title = "Developed by J P Sharma - 9927067443"
             update_cell(cell='A3',data=title,sheetname='DashBoard')
-            update_cell(cell='A200',data=sub_title,sheetname='DashBoard')
+            update_cell(cell='F3',data=sub_title,sheetname='DashBoard')
             # Condtion 1
             conditionName = "SUPER HERO" # change name Here
             conditionNameLocation = "A4"
