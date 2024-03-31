@@ -44,7 +44,7 @@ def trasferDataToGoogleSheet():
         # Condtion 2
         try:
             # Condtion 2
-            conditionName = "MACD" # change name Here
+            conditionName = "DAILY MACD CROSSOVER" # change name Here
            
             CONDITION2 = {"scan_clause": "( {cash} ( ( {cash} ( latest macd line( 13 , 8 , 5 ) > latest macd signal( 13 , 8 , 5 ) and 1 day ago  macd line( 13 , 8 , 5 ) <= 1 day ago  macd signal( 13 , 8 , 5 ) and 1 day ago macd line( 13 , 8 , 5 ) < 1 day ago macd signal( 13 , 8 , 5 ) and latest rsi( 14 ) >= 40 and latest volume >= latest sma( latest volume , 20 ) and market cap >= 500 ) ) ) ) "}
             row_to_start ='F3'
@@ -101,8 +101,8 @@ def trasferDataToGoogleSheet():
         # Condtion 7    - Stopped by User - to be change on 20.3.2024
         try:
             # condition 
-            conditionName = "COMPOUNDING FUNDA D>40 W>60 M>60"
-            CONDITION7 = {"scan_clause": "( {cash} ( ( {33489} ( monthly rsi( 14 ) > 60 and weekly rsi( 14 ) > 60 and 1 day ago rsi( 14 ) > 37 and 1 day ago rsi( 14 ) < 60 and latest rsi( 14 ) > 1 day ago rsi( 14 ) ) ) ) ) "}
+            conditionName = "Monthly>60 Weekly>60 Daily 40-45"
+            CONDITION7 = {"scan_clause": "( {57960} ( monthly rsi( 14 ) >= 60 and weekly rsi( 14 ) >= 60 and latest rsi( 14 ) >= 40 and latest rsi( 14 ) <= 45 ) )"}
             row_to_start ='AE3'
             row_to_clean = "AE3:AH"
             conditionNameLocation = "Y4"
